@@ -1,0 +1,9 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: loans
+  profiles:
+    active: test
+  config:
+    import: "configserver:http://localhost:8070"
